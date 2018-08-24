@@ -8,7 +8,6 @@ import os
 
 from common import config
 
-
 class Log(object):
     """日志类"""
 

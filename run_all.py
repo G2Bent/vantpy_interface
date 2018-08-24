@@ -29,7 +29,7 @@ if __name__=="__main__":
     fp = open(filename, 'wb')
     # 调用写好的HTMLTestRunner指定生成报告的文件、标题和副标题
     runner = HTMLTestRunner3.HTMLTestRunner(stream=fp,
-                                           title='Demo Test Report',
+                                           title='Test Report',
                                            description='这是测试demo的测试报告：')
     # 执行测试用例集并生成报告
     runner.run(discover)

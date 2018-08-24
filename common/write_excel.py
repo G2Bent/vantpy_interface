@@ -48,6 +48,7 @@ class WriteExcel(object):
         self.ws.cell(row,col).value = value#写入数据到指定单元格
         self.ws.cell(row,col).font =Font(color=color)
         self.ws.cell(row,col).alignment = Alignment(horizontal='center',vertical='center')
+        self.wb.save(self.filename)#保存文件
 
 if __name__ =="__main__":
     wt = WriteExcel(config.test_data_path+'test_01.xlsx','test')
